@@ -1,3 +1,5 @@
+Forked from https://github.com/grempe/secrets.js since project seems abandoned and needed a change to allow imports.
+
 # secrets.js
 
 - [What is it?](#what-is-it)
@@ -110,7 +112,7 @@ There are some additional examples of simple usage in the browser, Node.js, and 
 This fork of secrets.js is available from [www.npmjs.com](https://www.npmjs.com/package/secrets.js-grempe). Install using
 
 ```bash
-npm install secrets.js-grempe
+npm install github:passbolt/secrets.js
 ```
 
 The source code for this package is available on [Github](https://github.com/grempe/secrets.js).
@@ -119,6 +121,10 @@ To use it in a Node.js application (Requires OpenSSL support compiled into Node)
 
 ```javascript
 var secrets = require("secrets.js")
+```
+or
+```javascript
+import secrets from 'secrets-passbolt';
 ```
 
 To use it in the browser with the global 'secrets' defined, include _secrets.js_ or _secrets.min.js_ in your HTML.
@@ -315,6 +321,10 @@ npm run test-browser-min
 ```
 
 ## Changelog
+
+- 2.0.1
+
+  - Allow imports.
 
 - 2.0.0
 

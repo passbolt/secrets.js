@@ -20,10 +20,11 @@
     "use strict"
 
     if (typeof define === "function" && define.amd) {
+        var globalThis = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {}
         // AMD. Register as an anonymous module.
         define([], function() {
             /*eslint-disable no-return-assign */
-            return (root.secrets = factory())
+            return (root.secrets = factory(globalThis.crypto))
             /*eslint-enable no-return-assign */
         })
     } else if (typeof exports === "object") {
