@@ -1,3 +1,5 @@
+Forked from https://github.com/grempe/secrets.js since project seems abandoned and needed a change to allow imports.
+
 # secrets.js
 
 - [What is it?](#what-is-it)
@@ -315,6 +317,10 @@ npm run test-browser-min
 ```
 
 ## Changelog
+
+- 2.0.1
+
+  - Allow imports.
 
 - 2.0.0
 
